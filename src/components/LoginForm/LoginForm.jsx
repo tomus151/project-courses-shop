@@ -11,8 +11,6 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
     const [password, setPassword] = useState('')
     const [validateMessage, setValidateMessage] = useState('');
 
-
-    console.log(StoreContext)
     const { user, setUser } = useContext(StoreContext);
     const handleOnChangeLogin = ({ target: { value } }) => setLogin(value);
     const handleOnChangePassword = ({ target: { value } }) => setPassword(value);
